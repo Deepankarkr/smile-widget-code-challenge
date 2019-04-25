@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Product(models.Model):
     name = models.CharField(max_length=25, help_text='Customer facing name of product')
     code = models.CharField(max_length=10, help_text='Internal facing reference to product')
@@ -8,7 +7,6 @@ class Product(models.Model):
     
     def __str__(self):
         return '{} - {}'.format(self.name, self.code)
-
 
 class GiftCard(models.Model):
     code = models.CharField(max_length=30)
@@ -22,3 +20,13 @@ class GiftCard(models.Model):
     @property
     def formatted_amount(self):
         return '${0:.2f}'.format(self.amount / 100)
+
+class ProductPrice(models.Model):
+    Product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    Amount = models.PositiveIntegerField(help_text='New Amount as per Schedule')
+    date_start = models.DateField()
+    date_end = models.DateField(blank=True, null=True)
+    Schedule_name = models.CharField(max_length=25,help_text='Black Friday price or 2019 Price')
+
+    def __str__(self):
+        return '{} - {}'.format(self.Schedule_name, self.Product)

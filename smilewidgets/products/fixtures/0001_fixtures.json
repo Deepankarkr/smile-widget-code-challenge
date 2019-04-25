@@ -17,6 +17,51 @@
         "price": 9900
     }
 },
+    {
+        "model": "products.ProductPrice",
+        "pk": 1,
+        "fields": {
+            "Product": 1,
+            "Amount": 80000,
+            "date_start": "2019-11-23",
+            "date_end": "2019-11-25",
+        "Schedule_name": "Black Friday price"
+        }
+    },
+    {
+        "model": "products.ProductPrice",
+        "pk": 2,
+        "fields": {
+            "Product": 2,
+            "Amount": 0,
+            "date_start": "2019-11-23",
+            "date_end": "2019-11-25",
+        "Schedule_name": "Black Friday price"
+        }
+    },
+    {
+        "model": "products.ProductPrice",
+        "pk": 3,
+        "fields": {
+            "Product": 1,
+            "Amount": 120000,
+            "date_start": "2019-01-01",
+            "date_end": null,
+        "Schedule_name": "2019 price"
+        }
+    },
+    {
+        "model": "products.ProductPrice",
+        "pk": 4,
+        "fields": {
+            "Product": 2,
+            "Amount": 12500,
+            "date_start": "2019-01-01",
+            "date_end": null ,
+            "Schedule_name": "2019 price"
+        }
+        },
+
 {
     "model": "products.giftcard",
     "pk": 2,
