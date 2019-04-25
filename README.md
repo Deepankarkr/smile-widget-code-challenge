@@ -74,7 +74,7 @@ The Smile Widget Company currently sells two types of smile widgets: a Big Widge
 
 ### please find attached screenshot in the Screenshot Folder
 
-[Browser Screenshot](/Browser.png)
-[pycharm Screenshot](/pycharm.png)
+- [Browser Screenshot](/Browser.png)
+- [pycharm Screenshot](/pycharm.png)
 
 
