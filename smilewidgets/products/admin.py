@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Product,GiftCard,ProductPrice
 
-# Register your models here.
+myModels = [Product,GiftCard,ProductPrice]  # iterable list
+admin.site.register(myModels)

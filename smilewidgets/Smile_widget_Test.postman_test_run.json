@@ -1,0 +1,690 @@
+{
+	"id": "bef776fb-44f7-496b-b390-d4929019f710",
+	"name": "Smile_widget_Test",
+	"allTests": [],
+	"timestamp": "2019-04-30T04:16:35.298Z",
+	"collection_id": "d1c749d6-ed4c-4556-9a7b-7cab37ce3ff6",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "d1c749d6-ed4c-4556-9a7b-7cab37ce3ff6",
+		"name": "Smile_widget_Test",
+		"description": "To Test the API end point with parameter to calculate price",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"345d06ef-4d5c-416e-a420-3bcf66361df9",
+			"4e3bb818-f923-4064-b2cc-fc6eb0c252de",
+			"34290a7f-8559-42eb-a921-b3c36eab05bb",
+			"a0cb786d-38fb-4cf1-8bd6-35e8239b25a6",
+			"e26ac796-75fb-4925-a8fd-b63e1aca2f74",
+			"52a06591-2a0f-42bb-a0f0-1d8a1480866f",
+			"0c0c7542-6cb0-414e-a141-3a3dc17c4e8f",
+			"b7f081f6-eb13-43cd-a183-7a82cc26212b",
+			"3f06b130-3ddf-4111-bb10-cd990c502245",
+			"03def9bc-c3bf-4224-b64a-88467fcf3f91"
+		],
+		"folders_order": [],
+		"owner": "0",
+		"favorite": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": null,
+	"results": [
+		{
+			"name": "get Price /2/2019-11-26/50OFF/",
+			"id": "345d06ef-4d5c-416e-a420-3bcf66361df9",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2019-11-26/50OFF/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is ok": true,
+				"Amount Calculation": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"1496"
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Amount Calculation": true
+				}
+			],
+			"time": "1496",
+			"totalRequestTime": "1496",
+			"iterationResults": {}
+		},
+		{
+			"name": "get Price /2/2019-11-26/10OFF/",
+			"id": "4e3bb818-f923-4064-b2cc-fc6eb0c252de",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2019-11-26/10OFF/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is ok": true,
+				"Amount Calculation": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"200"
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Amount Calculation": true
+				}
+			],
+			"time": "200",
+			"totalRequestTime": "200",
+			"iterationResults": {}
+		},
+		{
+			"name": "get Price /1/2019-11-24/10OFF/",
+			"id": "34290a7f-8559-42eb-a921-b3c36eab05bb",
+			"url": "http://127.0.0.1:8000/api/get_price/1/2019-11-24/10OFF/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is ok": true,
+				"Amount Calculation": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"223"
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Amount Calculation": true
+				}
+			],
+			"time": "223",
+			"totalRequestTime": "223",
+			"iterationResults": {}
+		},
+		{
+			"name": "get Price /1/2019-11-22/250OFF/",
+			"id": "a0cb786d-38fb-4cf1-8bd6-35e8239b25a6",
+			"url": "http://127.0.0.1:8000/api/get_price/1/2019-11-22/250OFF/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is ok": true,
+				"Amount Calculation": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"242"
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Amount Calculation": true
+				}
+			],
+			"time": "242",
+			"totalRequestTime": "242",
+			"iterationResults": {}
+		},
+		{
+			"name": "get Price /2/2019-11-22/",
+			"id": "e26ac796-75fb-4925-a8fd-b63e1aca2f74",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2019-11-22/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is ok": true,
+				"Amount Calculation": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"264"
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Amount Calculation": true
+				}
+			],
+			"time": "264",
+			"totalRequestTime": "264",
+			"iterationResults": {}
+		},
+		{
+			"name": "get Price /1/2019-11-26/",
+			"id": "52a06591-2a0f-42bb-a0f0-1d8a1480866f",
+			"url": "http://127.0.0.1:8000/api/get_price/1/2019-11-26/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is ok": true,
+				"Amount Calculation": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"262"
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Amount Calculation": true
+				}
+			],
+			"time": "262",
+			"totalRequestTime": "262",
+			"iterationResults": {}
+		},
+		{
+			"name": "get Price /2/2018-11-26/10OFF/",
+			"id": "0c0c7542-6cb0-414e-a141-3a3dc17c4e8f",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2018-11-26/10OFF/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is ok": true,
+				"Amount Calculation": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"386"
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Amount Calculation": true
+				}
+			],
+			"time": "386",
+			"totalRequestTime": "386",
+			"iterationResults": {}
+		},
+		{
+			"name": "get Price /2/2018-02-23/250OFF/",
+			"id": "b7f081f6-eb13-43cd-a183-7a82cc26212b",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2018-02-23/250OFF/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is ok": true,
+				"Amount Calculation": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"340"
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Amount Calculation": true
+				}
+			],
+			"time": "340",
+			"totalRequestTime": "340",
+			"iterationResults": {}
+		},
+		{
+			"name": "get Price /1/2020-11-26/50OFF/",
+			"id": "3f06b130-3ddf-4111-bb10-cd990c502245",
+			"url": "http://127.0.0.1:8000/api/get_price/1/2020-11-26/50OFF/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is ok": true,
+				"Amount Calculation": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"111"
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Amount Calculation": true
+				}
+			],
+			"time": "111",
+			"totalRequestTime": "111",
+			"iterationResults": {}
+		},
+		{
+			"name": "get Price /2/2019-11-23/250OFF/",
+			"id": "03def9bc-c3bf-4224-b64a-88467fcf3f91",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2019-11-23/250OFF/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is ok": true,
+				"Amount Calculation": true
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"129"
+			],
+			"allTests": [
+				{
+					"response is ok": true,
+					"Amount Calculation": true
+				}
+			],
+			"time": "129",
+			"totalRequestTime": "129",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 20,
+	"totalFail": 0,
+	"totalTime": 3653,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "get Price /2/2019-11-26/50OFF/",
+			"id": "345d06ef-4d5c-416e-a420-3bcf66361df9",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2019-11-26/50OFF/",
+			"time": "2019-04-30T04:16:35.298Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get Price /2/2019-11-26/10OFF/",
+			"id": "4e3bb818-f923-4064-b2cc-fc6eb0c252de",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2019-11-26/10OFF/",
+			"time": "2019-04-30T04:16:35.298Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get Price /1/2019-11-24/10OFF/",
+			"id": "34290a7f-8559-42eb-a921-b3c36eab05bb",
+			"url": "http://127.0.0.1:8000/api/get_price/1/2019-11-24/10OFF/",
+			"time": "2019-04-30T04:16:35.298Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get Price /1/2019-11-22/250OFF/",
+			"id": "a0cb786d-38fb-4cf1-8bd6-35e8239b25a6",
+			"url": "http://127.0.0.1:8000/api/get_price/1/2019-11-22/250OFF/",
+			"time": "2019-04-30T04:16:35.298Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get Price /2/2019-11-22/",
+			"id": "e26ac796-75fb-4925-a8fd-b63e1aca2f74",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2019-11-22/",
+			"time": "2019-04-30T04:16:35.298Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get Price /1/2019-11-26/",
+			"id": "52a06591-2a0f-42bb-a0f0-1d8a1480866f",
+			"url": "http://127.0.0.1:8000/api/get_price/1/2019-11-26/",
+			"time": "2019-04-30T04:16:35.298Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get Price /2/2018-11-26/10OFF/",
+			"id": "0c0c7542-6cb0-414e-a141-3a3dc17c4e8f",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2018-11-26/10OFF/",
+			"time": "2019-04-30T04:16:35.298Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get Price /2/2018-02-23/250OFF/",
+			"id": "b7f081f6-eb13-43cd-a183-7a82cc26212b",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2018-02-23/250OFF/",
+			"time": "2019-04-30T04:16:35.298Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get Price /1/2020-11-26/50OFF/",
+			"id": "3f06b130-3ddf-4111-bb10-cd990c502245",
+			"url": "http://127.0.0.1:8000/api/get_price/1/2020-11-26/50OFF/",
+			"time": "2019-04-30T04:16:35.298Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get Price /2/2019-11-23/250OFF/",
+			"id": "03def9bc-c3bf-4224-b64a-88467fcf3f91",
+			"url": "http://127.0.0.1:8000/api/get_price/2/2019-11-23/250OFF/",
+			"time": "2019-04-30T04:16:35.298Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Amount Calculation": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

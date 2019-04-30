@@ -1,26 +1,10 @@
+import json
 from datetime import datetime
-from django.http import HttpResponse
-from django.template import Template, Context,loader
-from products.models import GiftCard,Product,ProductPrice
-
-# Create your views here.
-def index(request):
-    template = loader.get_template('home.html')
-    context = {}
-    return HttpResponse(template.render(context,request))
-
-def detail(request,path):
-    l=path.split("_")
-    productcode,Giftcardcode,date_str,=l[0],l[1],l[2]
-    dic={"Big-Widget":1,"Small-Widget":2}
-    date=datetime.strptime(date_str,'%Y-%m-%d').date()
-    result=sch_price(dic[productcode],date)-giftcard_off(Giftcardcode,date)
-    template = loader.get_template('index.html')
-
-    context = {
-        'result': result,
-    }
-    return HttpResponse(template.render(context, request))
+from rest_framework import generics
+from .models import Product,GiftCard,ProductPrice
+from .serializers import productSerializer,giftcardSerializer,prodpriceSerializer
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
 
 def sch_price(productcode,current_date):
@@ -42,7 +26,7 @@ def sch_price(productcode,current_date):
 
 def giftcard_off(giftcode,current_date):
     off_amount=0
-    if(str(giftcode)!=""):
+    if(str(giftcode)!="None"):
         start_date = [a.date_start for a in GiftCard.objects.filter(code=giftcode)][0]
         date_end = [a.date_end for a in GiftCard.objects.filter(code=giftcode)][0]
 
@@ -58,3 +42,19 @@ def giftcard_off(giftcode,current_date):
         else:
             off_amount=0
     return off_amount
+
+
+class enquiryList(generics.ListCreateAPIView):
+    queryset = GiftCard.objects.all()
+    serializer_class = giftcardSerializer
+
+
+class enquiryDetail(APIView):
+    def get(self, request, productcode,date,giftCardCode='None'):
+        dt = datetime.strptime(date, '%Y-%m-%d').date()
+        gift_off=giftcard_off(giftCardCode,dt)
+        sch_p=sch_price(int(productcode),dt)
+        res=sch_p-gift_off
+        result = res if (res >=0) else 0
+        x = { "Date" :dt ,"Product Code": productcode,"Gift Code": giftCardCode,"Amount": result}
+        return Response(x)
