@@ -70,7 +70,8 @@ The Smile Widget Company currently sells two types of smile widgets: a Big Widge
  - python manage.py runserver
  - Open Browser
 
-### open url	" http://127.0.0.1:8000/api/get_price "
+### open url	" http://127.0.0.1:8000/api/get_price/<productcode>/<date>/[<giftcode>]/ "
+  example "http://127.0.0.1:8000/api/get_price/2/2019-11-26/50OFF/"
 
 ### please find attached screenshot in the Screenshot Folder
 
